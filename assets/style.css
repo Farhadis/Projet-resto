@@ -62,7 +62,7 @@
     z-index: 1;
     opacity: 30%;
     top: calc(35vh - 40px);
-    left: calc(49vw - 75px);
+    left: calc(50vw - 75px);
   }
   
   .loader {
