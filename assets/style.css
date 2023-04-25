@@ -57,10 +57,92 @@
     height: 113px;
   }
   
+
+
+  .move1 {
+    animation: 6.5s 1 forwards movement1;
+    transition: transform ease-in-out;
+    transition-delay: 4s;
+  }
+  
+  @keyframes movement1 {
+    0% {
+      opacity: 0;
+      transform: translateY(280px);
+    }
+  
+    100% {
+      opacity: 100%;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .move2 {
+    animation:2.5s 1 forwards movement2;
+    transition: transform ease-in-out;
+    transition-delay: 4s;
+  }
+  
+  @keyframes movement2 {
+    0% {
+      opacity: 0;
+      transform: translateY(80px);
+    }
+    80% {
+      opacity: 33%;
+    }
+    100% {
+      opacity: 100%;
+      transform: translateY(0);
+    }
+  }
+  
+  .move3 {
+    animation:2.5s 1 forwards movement1;
+    transition: transform ease-in-out;
+    transition-delay: 4s;
+  }
+  
+  @keyframes movement3 {
+    0% {
+      opacity: 0;
+      transform: translateY(80px);
+    }
+    80% {
+      opacity: 3%;
+    }
+    100% {
+      opacity: 100%;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade {
+    height: 100%;
+    background-color: #fff;
+    opacity: 100%;
+    animation: fade 4s ease-out;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0%;
+    }
+    80% {
+      opacity: 3%;
+    } 
+    100% {
+      opacity: 100%;
+    }
+  }
+  
+  
+
   .loading {
     position: fixed;
     z-index: 1;
-    opacity: 30%;
+    opacity: 50%;
     top: calc(35vh - 40px);
     left: calc(50vw - 75px);
   }
@@ -77,18 +159,19 @@
     opacity: 0%;
     margin-left: 40%;
     margin-top: -40px;
-    animation: spin 0.3s linear 5;
+    animation: spin 0.3s linear 9;
     animation-delay: 0.4s;
   }
   
+
   @keyframes spin {
     0% {
       transform: rotate(0deg);
-      opacity: 0.5;
+      opacity: 100%;
     }
     100% {
       transform: rotate(360deg);
-      opacity: 1;
+      opacity:  50%;
     }
   }
   
@@ -725,37 +808,7 @@
     }
   }
   
-  .move2 {
-    animation: 1.5s 1 forwards movement;
-    transition: ease-in-out;
-    transition-delay: 2s;
-  }
-  
-  @keyframes movement {
-    0% {
-      transform: translateY(80px);
-    }
-  
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  .move3 {
-    animation: 2s 1 forwards movement;
-    transition: ease-in-out;
-    transition-delay: 2s;
-  }
-  
-  @keyframes movement {
-    0% {
-      transform: translateY(80px);
-    }
-  
-    100% {
-      transform: translateY(0);
-    }
-  }
+ 
   
   .move4 {
     animation: 2.5s 1 forwards movement;
@@ -811,7 +864,6 @@
       padding-left: 15px;
       padding-top: 0px;
       padding-bottom: 10px;
-      font-size: 0.7rem;
     }
   
     .btn-color {
